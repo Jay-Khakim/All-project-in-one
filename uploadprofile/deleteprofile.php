@@ -16,7 +16,7 @@ if (!unlink($file)) {
 }else {
   echo "File was Deleted!";
 }
-// asdasdasdasdasdasdasd
+// asdasdasdasdasdasdasd 
 $sql = "UPDATE profile_img SET status =1 WHERE userid='$sessionid'";
 mysqli_query($dbcon, $sql);
 header("Location: index.php?deletesuccess");

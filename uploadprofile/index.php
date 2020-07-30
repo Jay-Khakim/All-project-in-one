@@ -6,7 +6,7 @@ include_once('mysqli_connect.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Upload files</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
