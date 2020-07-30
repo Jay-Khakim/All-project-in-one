@@ -1,0 +1,337 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+div.wrapper div.header div.head-top {
+    background-color:#000081;
+}
+div.wrapper div.header div.head-top div.nav {
+    background-color: #000081;
+    height: 100%;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+div.wrapper div.header div.head-top div.nav div.dropdown {
+    border: none !important;
+    box-shadow: unset !important;
+}   
+div.wrapper div.header div.head-top div.nav div.dropdown button{
+    border: none !important;
+    box-shadow: unset !important;
+    background-color: unset !important;
+    padding-right: 0px;
+    color: white;
+}   
+div.wrapper div.header div.head-top div.nav .dropdown .dropdown-menu {
+    border: 1px solid #e0e0e0;
+    border-radius: 0px;
+    color: white;
+}   
+div.wrapper div.header div.head-top div.nav .dropdown .dropdown-menu .dropdown-item:hover:hover{
+    background-color: #000081 !important;
+}   
+div.wrapper div.header ul {
+    list-style: none;
+}   
+div.wrapper div.header ul li {
+    list-style: none;
+}   
+/* logo and search nav */
+div.wrapper div.header div.search {
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+div.wrapper div.header div.search div.search-from {
+    width: 100%;
+}
+div.wrapper div.header div.search div.logo img {
+    width: 180px;
+}
+div.wrapper div.header div.search div.search-form input {
+    border: 2px solid #000081;
+    border-right: 2px solid #000081;
+    width: 80%;
+    height: 44px;
+    padding: 8px 15px;
+    outline: none;
+}
+div.wrapper div.header div.search div.search-form button {
+    border: 2px solid #000081;
+    background-color: #000081;
+    color: white;
+    height: 44px;
+    width: 10%;
+    margin-left: -6px;
+}
+/* Slider and category-list */
+div.wrapper div.header div.category-slider .slider-nav {
+    /* height: 50px; */
+    background: #000081;
+}
+div.wrapper div.header div.category-slider .slider-nav ul.menu {
+    display: inline-block;
+    height: 100%;
+    padding-left: 16px;
+}
+div.wrapper div.header div.category-slider .slider-nav ul.menu > li{
+    display: inline-block;
+    /* float: left; */
+}
+div.wrapper div.header div.category-slider .slider-nav ul.menu > li a{
+    display: inline-block;
+    height: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+div.wrapper div.header div.category-slider .slider-nav ul.menu > li i{
+    transition: transform 0.2s;
+}
+div.wrapper div.header div.category-slider .slider-nav ul.menu li:nth-child(2)  ul{
+    width: 152px; font-size: 14px; border: 1px solid #e0e0e0; display: none;
+}
+div.wrapper div.header div.category-slider .slider-nav ul.menu > li:nth-child(2):hover ul{
+    display: block;
+}
+div.wrapper div.header div.category-slider .slider-nav ul.menu > li:nth-child(2):hover i{
+    transform: rotateX(180deg);
+}
+div.wrapper div.header div.category-slider .slider-nav ul.menu > li > ul a:hover{
+    text-decoration: underline;
+    color: #000081 !important;
+}
+div.wrapper div.header div.category-slider div.wrap {
+    width: 100%;
+}
+/* Categoryies left-menu */
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list {
+    list-style: none;
+    padding: 5px;
+    padding-right: 0px;
+    display: block;
+}
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list li img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list div.category-sub {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 282px;
+    z-index: 99;
+    width: 600px;
+    min-height: 100%;
+    background-color: white;
+    padding: 20px 40px 20px 20px;
+}
+div.slider div.carousel-inner div.carousel-item img {
+    height: 400px; 
+    object-fit: cover;
+    width: 100%;
+}
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list li a{
+    padding: 5px;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    /* display: flex;
+    align-items: center; */
+}
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list li i{
+    transition: margin-right 0.4s;
+}
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list li:hover i {
+    margin-right: 12px;
+}
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list li:hover div.category-sub {
+    display: block;
+}
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list li:hover a,
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list li:hover i {
+    color: #000081;
+}
+div.wrapper div.header div.category-slider div.wrap div.categories .category-list li i{
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+/* right-both-banner */
+div.wrapper div.header div.category-slider div.wrap div.right-both-banner {
+    width: 100%;
+    background-color: #fbe9e7;
+}
+div.wrapper div.header div.category-slider div.wrap div.right-both-banner div.row > div {
+    padding: 0px;
+}
+div.wrapper div.header div.category-slider div.wrap div.right-both-banner a {
+    display: inline-block;
+    padding: 2px;
+}
+div.wrapper div.header div.category-slider div.wrap div.right-both-banner img {
+    width: 100%;
+    height: 196px; 
+    object-fit: cover;
+}
+
+div.main .quik-link {
+    margin-top: 20px;
+    display: inline-block;
+    list-style: none;
+    padding-left: 0px;
+}
+div.main .quik-link li {
+    display: inline;
+}
+div.main .quik-link li a{
+    color: black;
+    font-weight: 400;
+    padding: 5px 10px;
+}
+div.main .quik-link li a:hover{
+    text-decoration: underline;
+    color: #000081;
+}
+div > .title-black {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* Companies local and foreign */
+div.main div.companies {
+    background-color: #bbdefb;
+}
+div.main div.companies div.row {
+    box-sizing: border-box !important;
+}
+div.main div.companies div.row > div{
+    padding: 2px 6px;
+}
+div.main div.companies div.row div a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: white;
+}
+div.main div.products > div {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+div.main div.product-item {
+    transition: box-shadow 0.5s;
+    padding: 3px;
+}
+div.main div.product-item:hover {
+    box-shadow: 1px 1px 3px #bdbdbd, 1px 1px 5px #bdbdbd, 1px 1px 7px #bdbdbd, -1px -1px 3px #bdbdbd, -1px -1px 5px #bdbdbd, -1px -1px 7px #bdbdbd;
+}
+div.main .more-link {
+    color: black;
+    font-weight: 400;
+}
+div.main .more-link:hover {
+    text-decoration: underline;
+    color: #000081;
+}
+/* Subscribe */
+div.subscribe {
+    width: 100%;
+    background-color: #000081;    
+} 
+div.subscribe p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+} 
+div.subscribe input:first-child {
+    width: 40%;
+    border: none;
+    padding: 8px;
+    outline: none;
+}
+div.subscribe input:last-child {
+    border: none;
+    margin-left: 2px;
+    padding: 5px 16px;
+    background-color: #000081;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+}
+/* Banner fourth */
+div.banner-fourth div.text-image img{
+    width: 100%;
+    /* height: 100px;
+    object-fit: cover; */
+}
+/* Products style*/
+div.wrap div.product-category ul.products {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 1px;
+}
+div.wrap div.product-category ul.products li {
+    display: inline-block;
+    width: 24%;
+}
+div.wrap div.product-category ul.products li a {
+    display: block;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 10px;
+}
+div.wrap div.product-category ul.products li a img {
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    margin-right: 5px;
+}
+div.wrap div.product-category ul.products li a:hover {
+    background-color: #000081;
+    color: white;
+}
+div.wrap {
+    /* background-color: #e0e0e0; */
+    margin-top: 10px;
+}
+/* two banner in products */
+div.wrap div.two-banners img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    padding: 0px;
+}
+div.wrap div.two-banners div.row > div {
+    padding: 0px;
+}
+/* OWL Carousel */
+div.owl-dots {
+    display: none;
+}
+/* .owl-carousel.owl-loaded {
+	display: inline-block;
+} */
+
+.company .card .card-body .card-title a{
+    font-size: 14px;
+}
+.company .card .card-body h5.card-title{
+    height: 40px;
+}
+.company .card .card-body > a{
+    font-size: 12px;
+}

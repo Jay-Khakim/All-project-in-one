@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.category-left{
+    /* background-color: #fbe9e7; */
+    border: 1px solid #fbe9e7;
+}
+.category-left .category-item .dropdown-menu{
+    /* top: 0; */
+    left: calc(100% - 5px);
+}
+.category-left .category-item .dropdown-menu .dropdown-item:hover{
+    background-color: #000081;
+}
+.category-left .category-item{
+    list-style: none;
+}
+.category-left .category-item:hover .dropdown-menu{
+    display: block;
+}
+.category-left .category-item > a{
+    color: black;
+}
+.category-left .category-item > a img{
+    width: 25px;
+}
+.category-left .category-item > a h5{
+    font-size: 14px;
+}
+
+.category-index .banner-liner{
+    height: 200px;
+    background-color: #fbe9e7;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid #000081; */
+}
+.category-index .banner-liner > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.category-index .banner-liner div.banner1{
+    background-size: 100% 100%;
+}
+.category-index .banner-liner div.banner2{
+    background-size: 100% 100%;
+    clip-path: polygon(0 100%, 100% 0, 0 0);
+    
+}
+.category-index .banner-liner div.banner1 .banner-body{
+    bottom: 30px;
+    right: 50px;
+    position: absolute;
+    width: 200px;
+    
+}
+.category-index .banner-liner div.banner1 .banner-body h5,
+.category-index .banner-liner div.banner2 .banner-body h5{
+    font-size: 18px;
+    word-break: break-all;
+}
+.category-index .banner-liner div.banner2 .banner-body{
+    left: 30px;
+    top: 30px;
+    position: absolute;
+    width: 400px;
+
+}
+.mobile-category{
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #bbdefb;
+    /* display: none; */
+    transform: translate(-100% , 0px);
+    transition: 0.8s transform;
+}
+.mobile-category .category-main .card{
+    background-color: unset;
+    color: black;
+}
+.mobile-category .category-main .card .card-header h5{
+    background-color: unset;
+    color: black;
+    font-size: 16px;
+}
+.mobile-category .category-main .card img{
+    width: 30px;
+    height: 30px;
+}
+.mobile-category .category-main .list-group .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    border-color: #000081;
+}
+.mobile-category .category-main .list-group .list-group-item a{
+    color: white;
+}
+.mobile-category .category-main{
+    height: calc(100% / 2 + 140px);
+    overflow: scroll;
+}
+.category-humburger{
+    color: #000081;
+    font-size: 27px;
+    cursor: pointer;
+}
+.search-form{
+    width: calc(100% - 50px) !important;
+}
+div.wrapper div.header div.search div.search-form button {
+    border: 1px solid #ffab91 none !important;
+    background: #000081;
+    color: white;
+    width: 10% unset;
+    height: 44px unset;
+    margin-left: -6px unset;
+}
+.category-breadcrumb{
+    /* border-bottom: 1px solid #000081; */
+    display: inline-block;
+    /* background-color: #fbe9e780; */
+}
+.category-breadcrumb a{
+    color: black;
+    border-bottom: 1px solid #000081;
+}
+.category-index .category-products .card{
+    box-shadow: none;
+    border: 1px solid #fbe9e7;
+    transition: 0.3s box-shadow;
+}
+.category-index .category-products .card:hover{
+    box-shadow: 0 2px 4px 0 rgba(231, 166, 166, 0.959);
+    transition: 0.3s box-shadow;
+}
+.category-index .category-products .card .card-title{
+    font-size: 14px;
+}
+.category-index .category-products .card .card-footer{
+    padding-left: 5px;
+}
+
+/* single product */
+
+.menu .dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover{
+    background: #000081 !important;
+    /* display: block; */
+}
+.menu .category-nav .dropdown-menu{
+    width: 500px;
+    padding: 10px;
+}
+.menu .category-nav .category-list .dropdown-item{
+    width: unset;
+}
+.single-post .category-left li:hover a{
+    color: #000081;
+    font-weight: bold;
+}
+.single-post .category-left li a.active{
+    color: #000081;
+    font-weight: bold;
+}
+.single-post .left-banner > div > div{
+    opacity: 0;
+    transition: .4s opacity;
+}
+.single-post .left-banner:hover > div > div {
+    opacity: 1;
+    transition: .4s opacity;
+}
+.company .card img{
+    /* object-fit: cover; */
+    width: 100%;
+    height: auto;
+}
+.single_company .company-products .card .view img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.category-products .card img{
+    width: 100%;
+    height: auto;
+}

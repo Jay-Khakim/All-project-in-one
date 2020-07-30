@@ -1,0 +1,24 @@
+Message-ID: <f9492bd3c3ad633ca6ad811a4fa6d95b@uzbekmart.com>
+Date: Fri, 22 May 2020 05:30:45 +0500
+Subject: Message subject
+From: misterdev96@gmail.com
+Reply-To: misterdev96@gmail.com
+To: mistern070696@mail.ru
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1590107445_842575d862f597340c4d6d759fab9242_=_"
+
+
+--_=_swift_v4_1590107445_842575d862f597340c4d6d759fab9242_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Plain text content
+
+--_=_swift_v4_1590107445_842575d862f597340c4d6d759fab9242_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<b>HTML content</b>
+
+--_=_swift_v4_1590107445_842575d862f597340c4d6d759fab9242_=_--

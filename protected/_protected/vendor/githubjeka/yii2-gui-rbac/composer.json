@@ -1,0 +1,36 @@
+{
+  "name": "githubjeka/yii2-gui-rbac",
+  "description": "Yii 2 RBAC management GUI interface",
+  "keywords": [
+    "yii2",
+    "RBAC",
+    "GUI"
+  ],
+  "homepage": "https://github.com/githubjeka/gui-rbac-yii2",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "support": {
+    "issues": "https://github.com/githubjeka/gui-rbac-yii2/issues",
+    "forum": "https://github.com/yiisoft/yii2/issues/42",
+    "source": "https://github.com/githubjeka/gui-rbac-yii2"
+  },
+  "authors": [
+    {
+      "name": "Evgeniy Tkachenko",
+      "email": "et.coder@gmail.com",
+      "homepage": "https://github.com/githubjeka"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": ">=2.0.6",
+    "bower-asset/d3": "~3.4",
+    "bower-asset/d3-tip": ">=0.6 <0.7",
+    "yiisoft/yii2-bootstrap": ">=2.0.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "githubjeka\\rbac\\": ""
+    }
+  }
+}

@@ -1,0 +1,99 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  
+    div.wrapper div.header div.category-slider div.wrap div.slider div.carousel-inner div.carousel-item img {
+        height: 220px; object-fit: cover;
+    }    
+    div.wrapper div.header div.category-slider div.wrap div.right-both-banner img {
+        height: 120px; 
+    }    
+    div.slider div.carousel-inner div.carousel-item img {
+        height: 200px;
+    }
+    div.subscribe input:first-child {
+        width: 70%;
+        padding: 2px;
+    }
+    div.subscribe input:last-child {
+        padding: 2px;
+    }
+    div.wrapper div.header div.category-slider .slider-nav ul.menu > li a{
+        margin-top: 5px;
+        padding: 3px;
+    }
+    div.wrap div.product-category ul.products li {
+        display: inline-block;
+        width: 32.6%;
+        font-size: 12px;
+    }
+    div.wrap div.product-category ul.products li a {
+        font-size: 12px;
+        padding-left: 1px;
+    }
+    div.wrap div.product-category ul.products li a img {
+        height: 25px;
+        width: 25px;
+        margin-right: 2px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    div.wrapper div.header div.category-slider div.wrap div.slider div.carousel-inner div.carousel-item img {
+        height: 200px; object-fit: cover;
+    }      
+    div.wrap div.product-category ul.products li {
+        display: inline-block;
+        width: 32.6%;
+        font-size: 12px;
+    }
+    div.wrap div.product-category ul.products li a {
+        font-size: 12px;
+        padding-left: 1px;
+    }
+    div.wrap div.product-category ul.products li a img {
+        height: 25px;
+        width: 25px;
+        margin-right: 2px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    div.wrapper div.header div.category-slider div.wrap div.categories .category-list div.category-sub {
+        left: 290px;
+        width: 450px;
+    }
+    div.wrapper div.header div.category-slider div.wrap div.right-both-banner img {
+        height: 160px; 
+    }    
+    div.slider div.carousel-inner div.carousel-item img {
+        height: 360px;
+    }
+    div.wrap div.product-category ul.products li {
+        display: inline-block;
+        width: 24%;
+        font-size: 12px;
+    }
+    div.wrap div.product-category ul.products li a {
+        font-size: 12px;
+        padding-left: 1px;
+    }
+    div.wrap div.product-category ul.products li a img {
+        height: 25px;
+        width: 25px;
+        margin-right: 2px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    div.wrapper div.header div.category-slider div.wrap div.categories .category-list div.category-sub {
+        left: 316px;
+        width: 500px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

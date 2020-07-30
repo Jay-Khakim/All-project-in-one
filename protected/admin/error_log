@@ -1,0 +1,1711 @@
+[18-May-2020 13:58:37 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/view.php:74
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/view.php(74): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 74, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), Object(yii\widgets\DetailView))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/DetailView.php(243): call_user_func(Object(Closure), Object(common\models\Category), Object(yii\widgets\DetailView))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /home/uzbekma1/public_html/_protected/backend/views/category/view.php(95): yii\base\Widget::widget(Array)
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\CategoryController))
+#15 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(65): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\base\CategoryController->actionView('15')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/view', Array)
+#21 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#22 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#23 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en/category/create',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJOOzsM1IFN8L4o-9IvAAAAAA4',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/view/15',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/view/15',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJOOzsM1IFN8L4o-9IvAAAAAA4',
+    'SCRIPT_URL' => '/admin/en/category/view/15',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/view/15',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '19546',
+    'REDIRECT_URL' => '/admin/en/category/view/15',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/view/15',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589792317.3893630504608154296875,
+    'REQUEST_TIME' => 1589792317,
+]
+[18-May-2020 13:58:48 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/view.php:74
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/view.php(74): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 74, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), Object(yii\widgets\DetailView))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/DetailView.php(243): call_user_func(Object(Closure), Object(common\models\Category), Object(yii\widgets\DetailView))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /home/uzbekma1/public_html/_protected/backend/views/category/view.php(95): yii\base\Widget::widget(Array)
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\CategoryController))
+#15 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(65): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\base\CategoryController->actionView('16')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/view', Array)
+#21 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#22 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#23 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en/category/create',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJOSOqvXmVzjR5JV91W8gAAAMU',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/view/16',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/view/16',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJOSOqvXmVzjR5JV91W8gAAAMU',
+    'SCRIPT_URL' => '/admin/en/category/view/16',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/view/16',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '22342',
+    'REDIRECT_URL' => '/admin/en/category/view/16',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/view/16',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589792328.4089450836181640625,
+    'REQUEST_TIME' => 1589792328,
+]
+[18-May-2020 14:00:12 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/view.php:74
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/view.php(74): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 74, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), Object(yii\widgets\DetailView))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/DetailView.php(243): call_user_func(Object(Closure), Object(common\models\Category), Object(yii\widgets\DetailView))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /home/uzbekma1/public_html/_protected/backend/views/category/view.php(95): yii\base\Widget::widget(Array)
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\CategoryController))
+#15 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(65): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\base\CategoryController->actionView('17')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/view', Array)
+#21 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#22 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#23 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en/category/create',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJOnEir6HasFlFc5NgdOgAAAog',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/view/17',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/view/17',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJOnEir6HasFlFc5NgdOgAAAog',
+    'SCRIPT_URL' => '/admin/en/category/view/17',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/view/17',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '37124',
+    'REDIRECT_URL' => '/admin/en/category/view/17',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/view/17',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589792412.056538105010986328125,
+    'REQUEST_TIME' => 1589792412,
+]
+[18-May-2020 14:02:35 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/index.php:118
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(118): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 118, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Category), 15, 11)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 15, 11)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Category), 15, 11)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Category), 15, 11)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(139): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\CategoryController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en/service/create',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJPK7r26r1OYI2xhNxi-wAAAso',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/index',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJPK7r26r1OYI2xhNxi-wAAAso',
+    'SCRIPT_URL' => '/admin/en/category/index',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '62236',
+    'REDIRECT_URL' => '/admin/en/category/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589792555.534553050994873046875,
+    'REQUEST_TIME' => 1589792555,
+]
+[18-May-2020 14:02:37 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/index.php:118
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(118): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 118, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Category), 15, 11)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 15, 11)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Category), 15, 11)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Category), 15, 11)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(139): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\CategoryController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en/service/create',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJPLeVvrb3fkX2fQAUB9gAAAlg',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/index',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJPLeVvrb3fkX2fQAUB9gAAAlg',
+    'SCRIPT_URL' => '/admin/en/category/index',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '62764',
+    'REDIRECT_URL' => '/admin/en/category/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589792557.804769039154052734375,
+    'REQUEST_TIME' => 1589792557,
+]
+[18-May-2020 14:03:04 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/index.php:118
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(118): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 118, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Category), 15, 11)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 15, 11)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Category), 15, 11)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Category), 15, 11)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(139): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\CategoryController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJPSIi0kVeehN6D1@a2PwAAAgY',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/index',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJPSIi0kVeehN6D1@a2PwAAAgY',
+    'SCRIPT_URL' => '/admin/en/category/index',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '4574',
+    'REDIRECT_URL' => '/admin/en/category/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589792584.2038700580596923828125,
+    'REQUEST_TIME' => 1589792584,
+]
+[18-May-2020 14:24:33 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/index.php:118
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(118): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 118, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Category), 15, 11)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 15, 11)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Category), 15, 11)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Category), 15, 11)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(139): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\CategoryController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJUUY5VtqYhpT6yb7J50QAAAMM',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/index',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJUUY5VtqYhpT6yb7J50QAAAMM',
+    'SCRIPT_URL' => '/admin/en/category/index',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '28610',
+    'REDIRECT_URL' => '/admin/en/category/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589793873.6589090824127197265625,
+    'REQUEST_TIME' => 1589793873,
+]
+[18-May-2020 14:24:47 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/index.php:118
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(118): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 118, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Category), 15, 11)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 15, 11)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Category), 15, 11)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Category), 15, 11)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(139): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\CategoryController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJUXxXZ8kkHFhf3lM@UDgAAAcg',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/index',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJUXxXZ8kkHFhf3lM@UDgAAAcg',
+    'SCRIPT_URL' => '/admin/en/category/index',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '31670',
+    'REDIRECT_URL' => '/admin/en/category/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589793887.7441051006317138671875,
+    'REQUEST_TIME' => 1589793887,
+]
+[18-May-2020 15:15:50 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/index.php:118
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(118): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 118, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Category), 15, 11)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 15, 11)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Category), 15, 11)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Category), 15, 11)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(139): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\CategoryController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en/category/index',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJgVaTvwD2rJ8wryZ1pNwAAAQk',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/index',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJgVaTvwD2rJ8wryZ1pNwAAAQk',
+    'SCRIPT_URL' => '/admin/en/category/index',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '55820',
+    'REDIRECT_URL' => '/admin/en/category/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589796949.945086002349853515625,
+    'REQUEST_TIME' => 1589796949,
+]
+[18-May-2020 15:15:50 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/index.php:118
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(118): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 118, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Category), 15, 11)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 15, 11)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Category), 15, 11)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Category), 15, 11)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(139): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\CategoryController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1369133323.1588413829; _ga_159284944=GS1.1.1589525479.8.1.1589527945.0; _identity=78c29b9a780e3bbff6358efb5d0bebee5243a7d2d8e0fe0feaebf1e7c43a1a34a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ckVyUGY5txk2_0teQB_Sq7T03OUJs2mm%22%2C2592000%5D%22%3B%7D; _csrf=b97d34d81a6b6c41ae52ad1da2b26108a97e166568b46edd77e4d2b53028adc3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SOuEHxQfDCFcceTpZxSGtJ4No0E2Yh24%22%3B%7D; PHPSESSID=2pfld0f4ck6jke8fk4trocog15',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'http://uzbekmart.com/admin/en/category/index',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.82.164',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'REDIRECT_UNIQUE_ID' => 'XsJgVqy-dcbobnRakbcfdwAAAME',
+    'REDIRECT_SCRIPT_URL' => '/admin/en/category/index',
+    'REDIRECT_SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJgVqy-dcbobnRakbcfdwAAAME',
+    'SCRIPT_URL' => '/admin/en/category/index',
+    'SCRIPT_URI' => 'http://uzbekmart.com/admin/en/category/index',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '213.230.82.164',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '55992',
+    'REDIRECT_URL' => '/admin/en/category/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589796950.3835980892181396484375,
+    'REQUEST_TIME' => 1589796950,
+]
+[18-May-2020 15:17:52 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/index.php:118
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(118): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 118, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Category), 15, 11)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 15, 11)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Category), 15, 11)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Category), 15, 11)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(139): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\CategoryController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,ru-RU;q=0.8,ru;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1298557284.1589613960; _ga_159284944=GS1.1.1589627495.2.1.1589627558.0; _identity=202f4cfd1345f7b1d0c55c546fceb7b1355e6e88003e0d5a62002ca765c1d2eba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22DBP0mrEnoqqam2S9hGYTBCCDLFDc791z%22%2C2592000%5D%22%3B%7D; PHPSESSID=ppckajumskqhpn59uddog4cq71; _csrf=4154f14b9a24118cd27d3be33bfd82d70c3f45d5df15b5533a09709ed4288fdfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S8f2lx5h5ZjXy8kTLln-jBuFWpL0j8kL%22%3B%7D',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'https://uzbekmart.com/admin/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.78.180',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'XsJg0FZkW0vXxgK0BCnhPwAAAMk',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJg0FZkW0vXxgK0BCnhPwAAAMk',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '213.230.78.180',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '48326',
+    'REDIRECT_URL' => '/admin/en/category/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589797072.66008090972900390625,
+    'REQUEST_TIME' => 1589797072,
+]
+[18-May-2020 15:17:53 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/index.php:118
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(118): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 118, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Category), 15, 11, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Category), 15, 11)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 15, 11)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Category), 15, 11)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Category), 15, 11)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/category/index.php(139): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\CategoryController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,ru-RU;q=0.8,ru;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1298557284.1589613960; _ga_159284944=GS1.1.1589627495.2.1.1589627558.0; _identity=202f4cfd1345f7b1d0c55c546fceb7b1355e6e88003e0d5a62002ca765c1d2eba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22DBP0mrEnoqqam2S9hGYTBCCDLFDc791z%22%2C2592000%5D%22%3B%7D; PHPSESSID=ppckajumskqhpn59uddog4cq71; _csrf=4154f14b9a24118cd27d3be33bfd82d70c3f45d5df15b5533a09709ed4288fdfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S8f2lx5h5ZjXy8kTLln-jBuFWpL0j8kL%22%3B%7D',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'https://uzbekmart.com/admin/',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.78.180',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'XsJg0VZkW0vXxgK0BCnhUQAAANA',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJg0VZkW0vXxgK0BCnhUQAAANA',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '213.230.78.180',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '48420',
+    'REDIRECT_URL' => '/admin/en/category/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589797073.172895908355712890625,
+    'REQUEST_TIME' => 1589797073,
+]
+[18-May-2020 15:19:49 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/category/view.php:74
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/category/view.php(74): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 74, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Category), Object(yii\widgets\DetailView))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/DetailView.php(243): call_user_func(Object(Closure), Object(common\models\Category), Object(yii\widgets\DetailView))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#5 [internal function]: yii\base\Object->__construct(Array)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#10 /home/uzbekma1/public_html/_protected/backend/views/category/view.php(95): yii\base\Widget::widget(Array)
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\CategoryController))
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\CategoryController))
+#15 /home/uzbekma1/public_html/_protected/backend/controllers/base/CategoryController.php(65): yii\base\Controller->render('view', Array)
+#16 [internal function]: backend\controllers\base\CategoryController->actionView('15')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#20 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('category/view', Array)
+#21 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#22 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#23 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,ru-RU;q=0.8,ru;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_ga=GA1.1.1298557284.1589613960; _ga_159284944=GS1.1.1589627495.2.1.1589627558.0; _identity=202f4cfd1345f7b1d0c55c546fceb7b1355e6e88003e0d5a62002ca765c1d2eba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22DBP0mrEnoqqam2S9hGYTBCCDLFDc791z%22%2C2592000%5D%22%3B%7D; PHPSESSID=ppckajumskqhpn59uddog4cq71; _csrf=4154f14b9a24118cd27d3be33bfd82d70c3f45d5df15b5533a09709ed4288fdfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S8f2lx5h5ZjXy8kTLln-jBuFWpL0j8kL%22%3B%7D',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'https://uzbekmart.com/admin/en/category/index',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.78.180',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'XsJhRYGrzg01vyOQU0lK@QAAAZU',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsJhRYGrzg01vyOQU0lK@QAAAZU',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '213.230.78.180',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '2378',
+    'REDIRECT_URL' => '/admin/en/category/view/15',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/category/view/15',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1589797189.2715671062469482421875,
+    'REQUEST_TIME' => 1589797189,
+]
+[23-May-2020 04:13:43 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/banners/index.php:85
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(85): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 85, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Banners), 13, 0)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Banners), 13, 0)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Banners), 13, 0)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Banners), 13, 0)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(118): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\BannersController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\BannersController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/BannersController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\BannersController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('banners/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,ru-RU;q=0.8,ru;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_csrf=e7385342c1c360f3089ecc95f1d541e1ac08f82d70b81843abfba7f3dddce8bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224otLcTQr3V-Nb8xIFgR53ygCVc0z17JB%22%3B%7D; PHPSESSID=sbmdnk78n4d7b6rgp4p9ornen7; _identity=202f4cfd1345f7b1d0c55c546fceb7b1355e6e88003e0d5a62002ca765c1d2eba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22DBP0mrEnoqqam2S9hGYTBCCDLFDc791z%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'https://uzbekmart.com/admin/en/banners/view/13',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.118.96',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'XshcpxvMS12XFdg6nEsflwAAAUk',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XshcpxvMS12XFdg6nEsflwAAAUk',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '213.230.118.96',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '62600',
+    'REDIRECT_URL' => '/admin/en/banners/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/banners/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1590189223.7792770862579345703125,
+    'REQUEST_TIME' => 1590189223,
+]
+[23-May-2020 04:13:47 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\base\View::{closure}() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\base\\View', '{closure}')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\base\\View::...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\base\\View', '{closure}', Array, 3)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/home/uzbekma1/...')
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#8 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#9 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /home/uzbekma1/public_html/_protected/backend/views/banners/index.php:85
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(85): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/home/uzbekma1/...', 85, Array)
+#1 [internal function]: yii\base\View->{closure}(Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Banners), 13, 0)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Banners), 13, 0)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Banners), 13, 0)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Banners), 13, 0)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(118): yii\base\Widget::widget(Array)
+#16 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\BannersController))
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\BannersController))
+#20 /home/uzbekma1/public_html/_protected/backend/controllers/base/BannersController.php(48): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\base\BannersController->actionIndex()
+#22 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('banners/index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#27 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#28 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,ru-RU;q=0.8,ru;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_csrf=e7385342c1c360f3089ecc95f1d541e1ac08f82d70b81843abfba7f3dddce8bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224otLcTQr3V-Nb8xIFgR53ygCVc0z17JB%22%3B%7D; PHPSESSID=sbmdnk78n4d7b6rgp4p9ornen7; _identity=202f4cfd1345f7b1d0c55c546fceb7b1355e6e88003e0d5a62002ca765c1d2eba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22DBP0mrEnoqqam2S9hGYTBCCDLFDc791z%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'https://uzbekmart.com/admin/en/banners/view/13',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.118.96',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'Xshcq2gdO5KZtmqLEzf4yAAAAQw',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'Xshcq2gdO5KZtmqLEzf4yAAAAQw',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '213.230.118.96',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '62918',
+    'REDIRECT_URL' => '/admin/en/banners/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/banners/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1590189227.063416957855224609375,
+    'REQUEST_TIME' => 1590189227,
+]
+[23-May-2020 04:20:34 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method common\models\Banners::getPageName() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('common\\models\\B...', 'getPageName')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('common\\models\\B...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/home/uzbekma1/...', 101, 'common\\models\\B...', 'getPageName', Array, 3)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#13 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: common\models\Banners::getPageName()' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(101): yii\base\Component->__call('getPageName', Array)
+#1 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(101): common\models\Banners->getPageName(1)
+#2 [internal function]: yii\base\View->{closure}(Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Banners), 13, 0)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Banners), 13, 0)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Banners), 13, 0)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Banners), 13, 0)
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#15 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#16 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(132): yii\base\Widget::widget(Array)
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\BannersController))
+#20 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\BannersController))
+#21 /home/uzbekma1/public_html/_protected/backend/controllers/base/BannersController.php(48): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\base\BannersController->actionIndex()
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('banners/index', Array)
+#27 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#28 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#29 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,ru-RU;q=0.8,ru;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_csrf=e7385342c1c360f3089ecc95f1d541e1ac08f82d70b81843abfba7f3dddce8bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224otLcTQr3V-Nb8xIFgR53ygCVc0z17JB%22%3B%7D; PHPSESSID=sbmdnk78n4d7b6rgp4p9ornen7; _identity=202f4cfd1345f7b1d0c55c546fceb7b1355e6e88003e0d5a62002ca765c1d2eba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22DBP0mrEnoqqam2S9hGYTBCCDLFDc791z%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'https://uzbekmart.com/admin/en/banners/view/13',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.118.96',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'XsheQRvMS12XFdg6nEsm5QAAAVE',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsheQRvMS12XFdg6nEsm5QAAAVE',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '213.230.118.96',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '36594',
+    'REDIRECT_URL' => '/admin/en/banners/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/banners/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1590189634.0943109989166259765625,
+    'REQUEST_TIME' => 1590189634,
+]
+[23-May-2020 04:20:36 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method common\models\Banners::getPageName() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('common\\models\\B...', 'getPageName')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('common\\models\\B...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/home/uzbekma1/...', 101, 'common\\models\\B...', 'getPageName', Array, 3)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#13 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: common\models\Banners::getPageName()' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(101): yii\base\Component->__call('getPageName', Array)
+#1 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(101): common\models\Banners->getPageName(1)
+#2 [internal function]: yii\base\View->{closure}(Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Banners), 13, 0)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Banners), 13, 0)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Banners), 13, 0)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Banners), 13, 0)
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#15 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#16 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(132): yii\base\Widget::widget(Array)
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\BannersController))
+#20 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\BannersController))
+#21 /home/uzbekma1/public_html/_protected/backend/controllers/base/BannersController.php(48): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\base\BannersController->actionIndex()
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('banners/index', Array)
+#27 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#28 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#29 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,ru-RU;q=0.8,ru;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_csrf=e7385342c1c360f3089ecc95f1d541e1ac08f82d70b81843abfba7f3dddce8bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224otLcTQr3V-Nb8xIFgR53ygCVc0z17JB%22%3B%7D; PHPSESSID=sbmdnk78n4d7b6rgp4p9ornen7; _identity=202f4cfd1345f7b1d0c55c546fceb7b1355e6e88003e0d5a62002ca765c1d2eba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22DBP0mrEnoqqam2S9hGYTBCCDLFDc791z%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_REFERER' => 'https://uzbekmart.com/admin/en/banners/view/13',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.118.96',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'XsheRBdMoTDXhjeV0JAOkAAAAIY',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsheRBdMoTDXhjeV0JAOkAAAAIY',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '213.230.118.96',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '37294',
+    'REDIRECT_URL' => '/admin/en/banners/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/banners/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1590189636.4351480007171630859375,
+    'REQUEST_TIME' => 1590189636,
+]
+[23-May-2020 04:20:57 Asia/Tashkent] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method common\models\Banners::getPageName() does not exist' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('common\\models\\B...', 'getPageName')
+#1 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('common\\models\\B...')
+#2 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/home/uzbekma1/...', 101, 'common\\models\\B...', 'getPageName', Array, 3)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#13 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: common\models\Banners::getPageName()' in /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(101): yii\base\Component->__call('getPageName', Array)
+#1 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(101): common\models\Banners->getPageName(1)
+#2 [internal function]: yii\base\View->{closure}(Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#3 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(213): call_user_func(Object(Closure), Object(common\models\Banners), 13, 0, Object(yii\grid\DataColumn))
+#4 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/DataColumn.php(227): yii\grid\DataColumn->getDataCellValue(Object(common\models\Banners), 13, 0)
+#5 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Banners), 13, 0)
+#6 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(common\models\Banners), 13, 0)
+#7 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(common\models\Banners), 13, 0)
+#8 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(155): yii\grid\GridView->renderItems()
+#10 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#15 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#16 /home/uzbekma1/public_html/_protected/backend/views/banners/index.php(132): yii\base\Widget::widget(Array)
+#17 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(328): require('/home/uzbekma1/...')
+#18 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/uzbekma1/...', Array)
+#19 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/uzbekma1/...', Array, Object(backend\controllers\BannersController))
+#20 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\BannersController))
+#21 /home/uzbekma1/public_html/_protected/backend/controllers/base/BannersController.php(48): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\base\BannersController->actionIndex()
+#23 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#25 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#26 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('banners/index', Array)
+#27 /home/uzbekma1/public_html/_protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(backend\components\LangRequest))
+#28 /home/uzbekma1/public_html/admin/index.php(18): yii\base\Application->run()
+#29 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_LANGUAGE' => 'en,en-US;q=0.9,ru-RU;q=0.8,ru;q=0.7',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_csrf=e7385342c1c360f3089ecc95f1d541e1ac08f82d70b81843abfba7f3dddce8bda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224otLcTQr3V-Nb8xIFgR53ygCVc0z17JB%22%3B%7D; PHPSESSID=sbmdnk78n4d7b6rgp4p9ornen7; _identity=202f4cfd1345f7b1d0c55c546fceb7b1355e6e88003e0d5a62002ca765c1d2eba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22DBP0mrEnoqqam2S9hGYTBCCDLFDc791z%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'uzbekmart.com',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_REFERER' => 'https://uzbekmart.com/admin/en/banners/view/13',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_X_FORWARDED_HOST' => 'uzbekmart.com',
+    'HTTP_X_FORWARDED_PORT' => '443',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_FORWARDED_SERVER' => 'uzbekmart.com',
+    'HTTP_X_REAL_IP' => '::ffff:213.230.118.96',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'REDIRECT_UNIQUE_ID' => 'XsheWWQ3EhgxOZQu4Hr15gAAAhg',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XsheWWQ3EhgxOZQu4Hr15gAAAhg',
+    'HTTPS' => 'on',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'uzbekmart.com',
+    'SERVER_ADDR' => '83.69.139.168',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '213.230.118.96',
+    'DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/uzbekma1/public_html',
+    'SERVER_ADMIN' => 'webmaster@uzbekmart.com',
+    'SCRIPT_FILENAME' => '/home/uzbekma1/public_html/admin/index.php',
+    'REMOTE_PORT' => '39150',
+    'REDIRECT_URL' => '/admin/en/banners/index',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/admin/en/banners/index',
+    'SCRIPT_NAME' => '/admin/index.php',
+    'PHP_SELF' => '/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1590189657.8500049114227294921875,
+    'REQUEST_TIME' => 1590189657,
+]

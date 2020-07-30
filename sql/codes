@@ -1,0 +1,19 @@
+CREATE TABLE post(
+	id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    subject varchar(128) not null,
+    content varchar(1000) not null,
+    date datetime not null
+);
+
+
+INSERT INTO post (subject, content, date) VALUES ('This is a content', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis faucibus velit id varius. Nulla facilisi. Pellentesque fringilla ipsum lorem, eget tempor enim mattis dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae ultricies magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam id dignissim nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. ', '2015-11-12 16:38:43');
+
+
+
+CREATE TABLE loginsystem (
+	id int(1000) NOT null PRIMARY KEY AUTO_INCREMENT,
+    user_first varchar(40) not null,
+    user_last varchar(40) not null,
+    user_email varchar(60) not null,
+
+)

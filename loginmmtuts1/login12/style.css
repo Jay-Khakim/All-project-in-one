@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+:root{
+  --font-ubuntu:'Ubuntu',monospace;
+  --color-border:#e5e5e5;
+}
+.font-ubuntu{
+  font: normal 500 16px var(--font-ubuntu);
+}
+
+#register{
+  padding: 5% 0;
+  background-image: url("assets/4.jpg");
+  background-size: cover;
+}
+
+.upload-profile-image{
+  position: relative;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: filter .8s ease;;
+
+}
+.upload-profile-image:hover{
+  filter: drop-shadow(1px 1px 22px #fc611f);
+}
+
+#upload-profile{
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  margin-top: 0px;
+  opacity: 0;
+}
+
+#upload-profile::-webkit-file-upload-button{
+  visibility: hidden;
+}
+#upload-profile::befor{
+  content:'';
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.camera-icon{
+  position: absolute;
+  top: 70px;
+  width: 60px !important;
+  filter: invert(30%)!important;
+
+}
+.camera-icon:hover{
+  filter: invert(100%)!important;
+
+}
+#reg-form input[type = 'text'],
+#reg-form input[type = 'email'],
+#reg-form input[type = 'password']{
+  background-color: #e0e9e8;
+  border: none;
+  border-radius: unset;
+  border-bottom: 1px solid lightgrey;
+  font-family: var(--font-ubuntu);
+}
+#reg-form input[type = 'text'],
+#reg-form input[type = 'email'],
+#reg-form input[type = 'password']{
+  outline: none;
+  box-shadow: none;
+}

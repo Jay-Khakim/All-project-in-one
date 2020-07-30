@@ -1,0 +1,63 @@
+body{
+  background: #fce8d5;
+}
+h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button{
+  background-color: aliceblue;
+  border-radius: 10px;
+  color: black;
+
+
+
+}
+button:hover {
+  width: 10%;
+  padding: 5px 5px;
+
+  background-color: #0a97b0;
+  }
+
+form {
+    border-radius: 5px;
+    background-color: #1b6ca8;
+    padding: 20px;
+  }
+
+.error  {
+  color: red;
+}
+
+.success{
+  color: green;
+}

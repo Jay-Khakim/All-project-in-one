@@ -1,0 +1,27 @@
+body{
+  background-color: #f3f3f3;
+  font-family: arial;
+}
+.article-container{
+  width: 90%;
+  background-color: #fff;
+  padding: 30px;
+
+}
+
+.article-box{
+  padding-bottom: 30px;
+  width: 90%;
+}
+input{
+    padding: 0px;
+    width: 300px;
+    height: 40px;
+    font-size: 22px;
+}
+button{
+    /* pad/ding: 0px; */
+    width: 100px;
+    height: 44px;
+    font-size: 22px;
+}

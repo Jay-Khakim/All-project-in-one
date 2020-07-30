@@ -1,0 +1,15 @@
+p {
+  text-align: center;
+  font-size: 120px;
+  font-family: Arial fantasy;
+  margin-top: 38vh;
+  color: cornflowerblue;
+}
+.image{
+  background-image: url("1.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  
+}

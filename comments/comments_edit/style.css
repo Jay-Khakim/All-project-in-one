@@ -1,0 +1,36 @@
+body{
+  background: lightgrey;
+}
+
+
+iframe{
+  width: 853px;
+  height: 480px;
+  border: 1px #999 solid;
+}
+
+textarea{
+  width: 850px;
+  height: 60px;
+  background-color: #fff;
+  resize: none;
+}
+button{
+  width: 80px;
+  height: 30px;
+  background-color: #282828;
+  border: none;
+  color: #fff;
+  font-family: arial;
+  font-weight: 400px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.comment-box{
+  width: 815px;
+  padding: 20px;
+  margin-bottom: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
