@@ -28,7 +28,9 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::post('contact/submit', function(){
-    // return Request::all();(
-    dd( Request::all());   //Dump and die
-})->name('contact-form-submit');
+// Route::post('contact/submit', function(){
+//     // return Request::all();(
+//     // dd( Request::all());   //Dump and die
+// })->name('contact-form-submit');
+
+Route::post('contact/submit', 'ContactController@submit')->name('contact-form-submit');
