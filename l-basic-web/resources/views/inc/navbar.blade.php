@@ -6,14 +6,18 @@
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link  {{Request::route()->getName() === 'home' ? 'active' : ''}}" href="{{route('home')}}">Home </a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/about">About <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link {{Request::is('about') ? 'active' : ''}}" href="{{route('about')}}">About </a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/contact">Contacts <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link {{Request::is('contact') ? 'active' : ''}}" href="{{route('contact')}}">Contacts </a>
+      </li>
+      
+      <li class="nav-item">
+         <a class="nav-link {{Request::is('messages') ? 'active' : ''}}" href="{{route('get-messages')}}">See Messages</a>
       </li>
       {{-- <li class="nav-item">
         <a class="nav-link" href="#">Link</a>

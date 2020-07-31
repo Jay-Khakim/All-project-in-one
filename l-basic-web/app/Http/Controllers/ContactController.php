@@ -19,4 +19,10 @@ class ContactController extends Controller
 
         return redirect()->route('home')->with('success', 'Message has been sent!');
     }
+
+    public function getMessages(){
+        $messages = Message::all();
+        // dd($messages);
+        return view('messages', ['messages'=> $messages]);
+    }
 }
