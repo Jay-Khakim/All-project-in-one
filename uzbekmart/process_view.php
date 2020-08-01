@@ -4,7 +4,7 @@ try {
   // This script retrieves all the records from the company table
   require('mysqli_connect.php');
   //set the number of rows per display page
-  $pagerows = 3;
+  $pagerows = 10;
   // Has the total number of pagess already been calculated?
   if ((isset($_GET['p']) && is_numeric($_GET['p']))) { //already been calculated
   	$pages = htmlspecialchars($_GET['p'], ENT_QUOTES);

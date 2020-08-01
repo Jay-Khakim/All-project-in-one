@@ -1,4 +1,4 @@
-<footer class="my-5 pt-5 text-muted text-center text-small bg-light fixed-bottom">
+<footer class="my-5 pt-5 text-muted text-center text-small bg-light ">
     <p class="mb-1 ">&copy; 2020 Uzbekmart.com</p>
     <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacy</a></li>
