@@ -5,7 +5,7 @@
     
 @endsection
 @section('content')
-{!!$page->content !!}       
+    {!!$page->content !!}       
+{{-- {!!   !!}    use this for reading the html by laravel --}}         
     
 @endsection
-{{-- {!!   !!}    use this for reading the html by laravel --}}         

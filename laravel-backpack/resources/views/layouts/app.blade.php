@@ -18,11 +18,15 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item {{Request::is('home')? 'active' : '' }}">
-            <a class="nav-link " href="/home">Home</a>
-            </li>
-            <li class="nav-item {{Request::is('about_us')? 'active' : '' }}">
-                <a class="nav-link " href="/about_us">About Us</a>
+                <li class="nav-item {{Request::is('home')? 'active' : '' }}">
+                <a class="nav-link " href="/home">Home</a>
+                </li>
+                <li class="nav-item {{Request::is('about_us')? 'active' : '' }}">
+                    <a class="nav-link " href="/about_us">About Us</a>
+                </li>  
+                <li class="nav-item {{Request::is('customers')? 'active' : '' }}">
+                    <a class="nav-link " href="/customers">Customers List</a>
+                </li> 
             </ul>
         </div>
     </nav>
