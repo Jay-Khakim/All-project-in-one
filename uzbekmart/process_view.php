@@ -4,7 +4,7 @@ try {
   // This script retrieves all the records from the company table
   require('mysqli_connect.php');
   //set the number of rows per display page
-  $pagerows = 10;
+  $pagerows = 3;
   // Has the total number of pagess already been calculated?
   if ((isset($_GET['p']) && is_numeric($_GET['p']))) { //already been calculated
   	$pages = htmlspecialchars($_GET['p'], ENT_QUOTES);
@@ -219,13 +219,11 @@ try {
     $current_page = ($start/$pagerows) + 1;
     //If the page is not the first page then create a Previous link
     if ($current_page != 1) {
-    $echostring .= '<a href="view.php?s=' . ($start - $pagerows) .
-    '&p=' . $pages . '">Previous</a> ';
+        $echostring .= '<a href="view.php?s=' . ($start - $pagerows) . '&p=' . $pages . '">Previous</a> ';
     }
     // Create a Next link
     if ($current_page != $pages) {
-    $echostring .= ' <a href="view.php?s=' . ($start + $pagerows) .
-    '&p=' . $pages . '">Next</a> ';
+        $echostring .= ' <a href="view.php?s=' . ($start + $pagerows) . '&p=' . $pages . '">Next</a> ';
     }
     $echostring .= '</p>';
     echo $echostring;

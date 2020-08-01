@@ -479,210 +479,182 @@
 
 
         <!-- Begin Hiraola's Product Area -->
-        <div class="hiraola-product_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="hiraola-section_title">
-                            <h4>Local Companies</h4>
-                        </div>
+        <?php 
+            try {
+                // This script retrieves all the records from the company table
+                require('mysqli_connect.php');
+                $pagerows = 3;
+                // Has the total number of pagess already been calculated?
+                if ((isset($_GET['p']) && is_numeric($_GET['p']))) { //already been calculated
+                    $pages = htmlspecialchars($_GET['p'], ENT_QUOTES);
+                    // make sure it is not executable XSS
+                }else{
+                    //use the next block of code to calculate the number of pages
+                    //First, check for the total number of records
+                    $q = "SELECT COUNT(id) FROM company";
+                    $result = mysqli_query ($dbcon, $q);
+                    $row = mysqli_fetch_array ($result, MYSQLI_NUM);
+                    $records = htmlspecialchars($row[0], ENT_QUOTES);
+                    // make sure it is not executable XSS
+                    //Now calculate the number of pages
+
+                    if ($records > $pagerows){
+                    //if the number of records will fill more than one page
+                    //Calculate the number of pages and round the result up to the nearest integer
+                    $pages = ceil ($records/$pagerows);
+                    }else {
+                    $pages = 1;
+                    }
+                }
+
+                //page check finished
+                //Declare which record to start with
+                if ((isset($_GET['s'])) &&( is_numeric($_GET['s'])))
+                {
+                $start = htmlspecialchars($_GET['s'], ENT_QUOTES);
+                // make sure it is not executable XSS
+                }else{
+                $start = 0;
+                }
+                $query = "SELECT id, name, sort, company_type, website, image FROM company WHERE company_type='local' ORDER BY sort DESC LIMIT ?, ? ";
+                $q = mysqli_stmt_init($dbcon);
+                mysqli_stmt_prepare($q, $query);
+
+                // bind $id to SQL Statement
+                mysqli_stmt_bind_param($q, "ii", $start, $pagerows);
+
+                // execute query
+
+                mysqli_stmt_execute($q);
+
+                $result = mysqli_stmt_get_result($q);
+                if ($result){
+                    ?>
+                
+                <div class="hiraola-product_area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="hiraola-section_title">
+                                    <h4>Local Companies</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="hiraola-product_slider">
+                                    <!-- Begin Hiraola's Slide Item Area -->
+                                    <?php
+                                    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+                                    // Remove special characters that might already be in table to
+                                    // reduce the chance of XSS exploits
+                                    $company_id = htmlspecialchars($row['id'], ENT_QUOTES);
+                                    $name = htmlspecialchars($row['name'], ENT_QUOTES);
+                                    $sort = htmlspecialchars($row['sort'], ENT_QUOTES);
+                                    $company_type = htmlspecialchars($row['company_type'], ENT_QUOTES);
+                                    $website = htmlspecialchars($row['website'], ENT_QUOTES);
+                                    $image = htmlspecialchars($row['image'], ENT_QUOTES);
+                                    echo '<div class="slide-item">
+                                        <div class="single_product">
+                                            <div class="product-img">
+                                                <a href="company/'.$company_type.'/'.$company_id.'">
+                                                    <img class="primary-img" src="'.$image.'" alt="Hiraola\'s Product Image">
+                                                </a>
+                                                <span class="sticker">Top</span>
+                                            </div>
+                                            <div class="hiraola-product_content">
+                                                <div class="product-desc_info">
+                                                    <h6 align="center"><a class="product-name" href="company/'.$company_type.'/'.$company_id.'">'.$name.'</a></h6>
+                                                    <div class="additional-add_action">
+                                                        <ul>
+                                                            <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="rating-box">
+                                                        <ul>';
+                                                        for ($i=0; $i <$sort; $i++) {
+                                                            echo '<li><i class="fa fa-star-of-david"></i></li>';
+                                                        }
+                                                        for ($i=0; $i < 5-$sort; $i++) {
+                                                            echo '<li class="silver-color"><i class="fa fa-star-of-david"></i></li>';
+                                                        }
+                                                        echo '</ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>';
+                                                    }
+                                    ?>
+                                    <!-- Hiraola's Slide Item Area End Here -->
+                                    
+                                </div>
+                            </div>
+                        </div> <br>
+                            <div  class="hiraola-btn-ps_center  text-center" id="btn21">
+                                    <a class="hiraola-btn" href="com-local.html">More</a>
+                            </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="hiraola-product_slider">
-                            <!-- Begin Hiraola's Slide Item Area -->
-                            <div class="slide-item">
-                                <div class="single_product">
-                                    <div class="product-img">
-                                        <a href="company/local/l1.html">
-                                            <img class="primary-img" src="assets/images/company/local/01.jpg" alt="Hiraola's Product Image">
-                                        </a>
-                                        <span class="sticker">Top</span>
-                                    </div>
-                                    <div class="hiraola-product_content">
-                                        <div class="product-desc_info">
-                                            <h6 align="center"><a class="product-name" href="company/local/l1.html">LLC “FARPRIDE UNITY”</a></h6>
-                                            <div class="additional-add_action">
-                                                <ul>
-                                                    <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="rating-box">
-                                                <ul>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hiraola's Slide Item Area End Here -->
-                            <!-- Begin Hiraola's Slide Item Area -->
-                            <div class="slide-item">
-                                <div class="single_product">
-                                    <div class="product-img">
-                                        <a href="company/local/l2.html">
-                                            <img class="primary-img" src="assets/images/company/local/02.jpg" alt="Hiraola's Product Image">
-                                        </a>
-                                        <span class="sticker">Top</span>
-                                    </div>
-                                    <div class="hiraola-product_content">
-                                        <div class="product-desc_info">
-                                            <h6 align="center"><a class="product-name" href="company/local/l2.html">LLC "Alibek Farg'ona Mevalari"</a></h6>
-                                            <div class="additional-add_action">
-                                                <ul>
-                                                    <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="rating-box">
-                                                <ul>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
-                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hiraola's Slide Item Area End Here -->
-                            <!-- Begin Hiraola's Slide Item Area -->
-                            <div class="slide-item">
-                                <div class="single_product">
-                                    <div class="product-img">
-                                        <a href="company/local/l3.html">
-                                            <img class="primary-img" src="assets/images/company/local/03.jpg" alt="Hiraola's Product Image">
-                                        </a>
-                                        <span class="sticker-2">New</span>
-                                    </div>
-                                    <div class="hiraola-product_content">
-                                        <div class="product-desc_info">
-                                            <h6 align="center"><a class="product-name" href="company/local/l3.html">LLC "Namangan evro aziya tekstil"</a></h6>
-                                            <div class="additional-add_action">
-                                                <ul>
-                                                    <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="rating-box">
-                                                <ul>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
-                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
-                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hiraola's Slide Item Area End Here -->
-                            <!-- Begin Hiraola's Slide Item Area -->
-                            <div class="slide-item">
-                                <div class="single_product">
-                                    <div class="product-img">
-                                        <a href="company/local/l4.html">
-                                            <img class="primary-img" src="assets/images/company/local/04.jpg" alt="Hiraola's Product Image">
-                                        </a>
-                                        <span class="sticker">Top</span>
-                                    </div>
-                                    <div class="hiraola-product_content">
-                                        <div class="product-desc_info">
-                                            <h6 align="center"><a class="product-name" href="company/local/l4.html">LTD “Chirchiq STMK 1”<br></a></h6>
-                                            <div class="additional-add_action">
-                                                <ul>
-                                                    <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="rating-box">
-                                                <ul>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hiraola's Slide Item Area End Here -->
-                            <!-- Begin Hiraola's Slide Item Area -->
-                            <div class="slide-item">
-                                <div class="single_product">
-                                    <div class="product-img">
-                                        <a href="company/local/l5.html">
-                                            <img class="primary-img" src="assets/images/company/local/05.jpg" alt="Hiraola's Product Image">
-                                        </a>
-                                        <span class="sticker-2">New</span>
-                                    </div>
-                                    <div class="hiraola-product_content">
-                                        <div class="product-desc_info">
-                                            <h6 align="center"><a class="product-name" href="company/local/l5.html">LTD “Turon ImpEx Buxara”</a></h6>
-                                            <div class="additional-add_action">
-                                                <ul>
-                                                    <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="rating-box">
-                                                <ul>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hiraola's Slide Item Area End Here -->
-                            <!-- Begin Hiraola's Slide Item Area -->
-                            <div class="slide-item">
-                                <div class="single_product">
-                                    <div class="product-img">
-                                        <a href="company/local/l6.html">
-                                            <img class="primary-img" src="assets/images/company/local/06.jpg" alt="Hiraola's Product Image">
-                                        </a>
-                                        <span class="sticker">Top</span>
-                                    </div>
-                                    <div class="hiraola-product_content">
-                                        <div class="product-desc_info">
-                                            <h6 align="center"><a class="product-name" href="company/local/l6.html">LLC «Extra Standart Oil»</a></h6>
-                                            <div class="additional-add_action">
-                                                <ul>
-                                                    <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="rating-box">
-                                                <ul>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li><i class="fa fa-star-of-david"></i></li>
-                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Hiraola's Slide Item Area End Here -->
-                        </div>
-                    </div>
-                </div> <br>
-                    <div  class="hiraola-btn-ps_center  text-center" id="btn21">
-                            <a class="hiraola-btn" href="com-local.html">More</a>
-                    </div>
-            </div>
-        </div>
+                </div>
+            <?php
+                mysqli_free_result($result); //Free up the resources.
+            } else {
+                // IF it did not run OK.
+                // Error message:
+                echo '<p class="text-center">The current company could not be retrieved. We apologize';
+                echo ' for any inconvenience.</p>';
+                // Debug message:
+                // echo '<p>' . mysqli_error($dbcon) . '<br><br>Query: ' . $q . '</p>';
+                exit;
+            }
+            // End of else ($result)
+            // Now display the total number of records/members.
+            $q = "SELECT COUNT(id) FROM company WHERE company_type='local'";
+            $result = mysqli_query ($dbcon, $q);
+            $row = mysqli_fetch_array ($result, MYSQLI_NUM);
+            $companies = htmlspecialchars($row[0], ENT_QUOTES);
+            mysqli_close($dbcon); // Close the database connection.
+            $echostring = "<p class='text-center'>Total number of companies are ". $companies ."</p>";
+            $echostring .= "<p class='text-center'>";
+            // echo $echostring;
+            if ($pages>1) {
+                //What number is the current page?
+                $current_page = ($start/$pagerows) + 1;
+                //If the page is not the first page then create a Previous link
+                if ($current_page != 1) {
+                    $echostring .= '<a href="view.php?s=' . ($start - $pagerows) . '&p=' . $pages . '">Previous</a> ';
+                }
+                // Create a Next link
+                if ($current_page != $pages) {
+                    $echostring .= ' <a href="view.php?s=' . ($start + $pagerows) . '&p=' . $pages . '">Next</a> ';
+                }
+                $echostring .= '</p>';
+                // echo $echostring;
+            }
+            } catch (\Exception $e) {
+                // We finally handle any problems here
+                // print "An Exception occurred. Message: " . $e->getMessage();
+                print "The system is busy please try later";
+                //  $date = date(‘m.d.y h:i:s’);
+                //  $errormessage = $e->getMessage();
+                //  $eMessage = $date . “ | Exception Error | “ , $errormessage . |\n”;
+                //   error_log($eMessage,3,ERROR_LOG);
+                // e-mail support person to alert there is a problem
+                //  error_log(“Date/Time: $date – Exception Error, Check error log for
+                //details”, 1, noone@helpme.com, “Subject: Exception Error \nFrom: Error Log <errorlog@helpme.com>” . “\r\n”);
+
+                }catch(Error $e)
+                {
+                // print "An Error occurred. Message: " . $e->getMessage();
+                print "The system is busy please try later";
+                // $date = date(‘m.d.y h:i:s’);
+                // $errormessage = $e->getMessage();
+                // $eMessage = $date . “ | Error | “ , $errormessage . |\n”;
+                // error_log($eMessage,3,ERROR_LOG);
+                // // e-mail support person to alert there is a problem
+                //  error_log(“Date/Time: $date – Error, Check error log for
+                //details”, 1, noone@helpme.com, “Subject: Error \nFrom: Error Log <errorlog@helpme.com>” . “\r\n”);
+
+                }
+        ?>
         <!-- Hiraola's Product Area End Here -->
 
         <!-- Begin Hiraola's Product Area -->
