@@ -35,6 +35,15 @@ class Customer extends Model
     |--------------------------------------------------------------------------
     */
 
+    public function tag(){
+        return $this->belongsTo('App\Models\Tag');
+    }
+
+    public function sendEmail($crud = true)
+    {
+        return '<a class="btn btn-sm btn-link" target="_blank" href="http://google.com?q='.urlencode($this->text).'" data-toggle="tooltip" title="Just a demo custom button."><i class="fa fa-search"></i> Google it</a>';
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES
