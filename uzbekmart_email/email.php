@@ -27,7 +27,7 @@ try {
 		$mail->Host = "smtp.gmail.com";
 		$mail->SMTPAuth = true;
 		$mail->Username = 'mgmediajay@gmail.com';
-		$mail->Password = 'fa00219842414';
+		$mail->Password = 'fa002198424';
 		$mail->Port = 465;
 		$mail->SMTPSecure = 'ssl';
 
@@ -36,12 +36,7 @@ try {
 		$mail->setFrom($email, $name);
 		$mail->addAddress("mgmediajay@gmail.com");
 		$mail->Subject = ("$email ($subject)");
-		$mail->Body = '<div style="background: grey; ">
-			<h1 align="center" style="color: red;">From Uzbekmart</h1>
-						<h2 style="color: red;">Dear admin!</h2><br>
-							<h2 style="color: red;">We are glad to announce that your company has successfully accepted to our platform</h2>
-							<a href="http://Uzbekmart.com/"></a>
-						</div>';
+		$mail->Body = $body;
 
 		if ($mail->send()) {
 			$status = "success";
