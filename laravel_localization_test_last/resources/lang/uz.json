@@ -1,0 +1,13 @@
+{
+    "Laravel": "Xush kelibsiz!",
+    "Name": "Ism",
+    "E-Mail Address": "Email Address",
+    "Login": "Kirish",
+    "Password": "Parol",
+    "Remember Me": "Meni eslab qol",
+    "Forgot Your Password?": "Parol esingizdan chiqdimi?",
+    "Register": "Royhatdan o'tish",
+    "Confirm Password": "Parolni qayta tering",
+    "Reset Password": "Parolni Yangilash",
+    "Send Password Reset Link": "Parolni Yangilanganini Yuborish"
+}

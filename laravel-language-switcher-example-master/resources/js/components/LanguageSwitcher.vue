@@ -54,8 +54,8 @@
             @keydown.tab.exact="hideDropdown"
             @keydown.esc.exact="hideDropdown"
           >
-            <img src="/flag_fr.svg" alt="english flag" class="h-8 w-8">
-            <span class="ml-2">French</span>
+            <img src="/flag_uz.svg" alt="english flag" class="h-8 w-8">
+            <span class="ml-2">Uzbekistan</span>
           </a>
         </li>
       </ul>

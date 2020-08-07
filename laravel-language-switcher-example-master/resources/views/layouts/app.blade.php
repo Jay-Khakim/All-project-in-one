@@ -41,7 +41,7 @@
                                 <a href="{{ route(Route::currentRouteName(), 'en') }}" class="nav-link">EN</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route(Route::currentRouteName(), 'fr') }}" class="nav-link">FR</a>
+                                <a href="{{ route(Route::currentRouteName(), 'uz') }}" class="nav-link">FR</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login', app()->getLocale()) }}">{{ __('Login') }}</a>
@@ -55,7 +55,7 @@
                                 <language-switcher
                                     locale="{{ app()->getLocale() }}"
                                     link-en="{{ route(Route::currentRouteName(), 'en') }}"
-                                    link-fr="{{ route(Route::currentRouteName(), 'fr') }}"
+                                    link-fr="{{ route(Route::currentRouteName(), 'uz') }}"
                                 ></language-switcher>
                             </li>
                         @else
