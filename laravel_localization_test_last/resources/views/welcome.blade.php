@@ -70,7 +70,7 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">{{__("Home")}}</a>
-                    @else
+                    @else 
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a href="{{ url('/en') }}" class="nav-link">EN</a>
