@@ -27,7 +27,7 @@ try {
 		$mail->Host = "smtp.gmail.com";
 		$mail->SMTPAuth = true;
 		$mail->Username = 'mgmediajay@gmail.com';
-		$mail->Password = 'fa00219842414';
+		$mail->Password = '';
 		$mail->Port = 465;
 		$mail->SMTPSecure = 'ssl';
 
@@ -69,7 +69,7 @@ try {
 	//     $mail->SMTPSecure = 'tls';
 	//
 	//     $mail->Username = 'mgmediajay@gmail.com';
-	//     $mail->Password = 'fa002198424';
+	//     $mail->Password = '';
 	//
 	//     $mail->setFrom("mgmediajay@gmail.coms", "Big Dream Int. Company");
 	//     $mail->addAddress("mahmudjon2127@gmail.com");
