@@ -1,0 +1,166 @@
+models: 
+  Models\Category: 
+    # parent_id: id :categories nullable 
+    name_en: string:300
+    name_uz: string:300
+    name_ru: string:300
+    slug_en: string:300 unique
+    timestamps: true
+    softDeletes: true
+    # relationships:
+    #   belongsToMany: SubCategory, Company, Tag, Product
+      
+  Models\Subcategory:
+    # category_id: id 
+    category_id: id 
+    name_en: string:300
+    name_uz: string:300
+    name_ru: string:300
+    slug_en: string:300 unique
+    timestamps: true
+    softDeletes: true
+    relationships:
+      belongsTo: Category
+
+  Models\Company:
+    # subcategory_id: id 
+    subcategory_id: id 
+    category_id: id 
+    tag_id: id 
+    companytype: enum:local,
+    name_en: string:300
+    name_uz: string:300
+    name_ru: string:300
+    slug_en: string:300 unique
+    desc_en: longtext 
+    desc_uz: longtext 
+    desc_ru: longtext
+    status: enum:active, inactive
+    image: string:300
+    web: varchar:80 
+    email: string:100
+    phone: char:20
+    address_en: varchar:255
+    address_uz: varchar:255
+    address_ru: varchar:255
+    timestamps: true
+    softDeletes: true
+    relationships:
+      belongsTo: Subcategory, Category
+      belongsToMany: Tag
+
+  Models\Tag:
+    name: string
+    slug: string unique
+    timestamps: true
+    softDeletes: true
+    # relationships:
+    #   belongsToMany: Subcategory, Category, Product, Company, Blog, Service, Investment
+
+  Models\Product: 
+    # company_id: id  
+    company_id: id 
+    tag_id: id 
+    name_en: string:300
+    name_uz: string:300
+    name_ru: string:300
+    slug_en: string:300 unique
+    desc_en: longtext 
+    desc_uz: longtext 
+    desc_ru: longtext
+    image: string:300
+    timestamps: true
+    softDeletes: true
+    relationships:
+      belongsTo: Company
+      belongsToMany: Tag
+
+  Models\Blog: 
+    tag_id: id 
+    title_en: string:300
+    title_uz: string:300
+    title_ru: string:300
+    slug_en: string:300 unique
+    body: longtext
+    image: string:300
+    timestamps: true
+    softDeletes: true
+    relationships:
+      belongsToMany: Tag
+
+
+  Models\Service:
+    tag_id: id 
+    company_id: id 
+    name_en: string:300
+    name_uz: string:300
+    name_ru: string:300
+    service_en: string:300
+    service_uz: string:300
+    service_ru: string:300
+    slug_en: string:300 unique
+    desc_en: longtext 
+    desc_uz: longtext 
+    desc_ru: longtext
+    status: enum:active, inactive
+    image: string:300
+    web: varchar:80 
+    email: string:100
+    phone: char:20
+    address_en: varchar:255
+    address_uz: varchar:255
+    address_ru: varchar:255
+    timestamps: true
+    softDeletes: true
+    relationships:
+      belongsTo: Company
+      belongsToMany: Tag
+
+  Models\Investment:
+    tag_id: id
+    category_id: id  
+    title_en: string:300
+    title_uz: string:300
+    title_ru: string:300
+    slug_en: string:300 unique
+    address_en: varchar:255
+    address_uz: varchar:255
+    address_ru: varchar:255
+    amount: char:20
+    avaragepower_en: char:50
+    avaragepower_uz: char:50
+    avaragepower_ru: char:50
+    iir: char:10
+    npv: char:20
+    payback: char:10
+    workplaces: char:10
+    timestamps: true
+    softDeletes: true
+    relationships:
+      belongsTo: Category
+      belongsToMany: Tag
+
+  Models\Buyrequest:
+    tag_id: id 
+    category_id: id 
+    name: string
+    email: string:100
+    company: string:200
+    wants: longtext
+    amount: char:40
+    image: string:300
+    timestamps: true
+    softDeletes: true
+    relationships:
+      belongsTo: Category
+      belongsToMany: Tag
+
+  Models\Banners: 
+    name: string
+    url: string:300
+    image: string:300
+    status: enum:active, inactive
+    deadline: date  #YYYY-MM-DD
+    timestamps: true
+    softDeletes: true
+    title: string
